@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <h3>Datos de Contacto</h3>
+    <ul>
+      <li>Dirección: <strong>Aznalcázar-Sevilla</strong></li>
+      <li>
+        Teléfono: <strong><a href="tel:+34602253554">602 25 35 54</a></strong>
+      </li>
+      <li>
+        Email: <strong><a href="mailto:r@rafa.es">r@rafa.es</a></strong>
+      </li>
+    </ul>
+    <form action="mailto:rcp@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Tu nombre: </label>
+      <input type="text" name="nombre" id="name" placeholder="Nombre y primer apellido"/><br/>
+      <label for="email">Tu correo: </label>
+      <input type="email" name="e_mail" id="email" /><br/>
+      <label for="msg"">Dime algo: </label>
+      <textarea name="mi_msg" id="msg" rows="8" cols="80" placeholder="Deja aquí tu mensaje"></textarea><br/>
+      <label for="date">Fecha nacimiento: </label>
+      <input type="date" name="fecha" id="date"><br/>
+      <fieldset>
+        <legend>Selecciona a qué puesto aplicas:</legend>
+        <div>
+          <input type="radio" id="ingeniero" name="puesto" value="ingeniero" checked />
+          <label for="huey">Ingeniero</label>
+        </div>
+        <div>  
+          <input type="radio" id="tecnico" name="puesto" value="tecnico" />
+          <label for="dewey">Técnico</label>
+        </div>
+        <div>
+          <input type="radio" id="peon" name="puesto" value="peon" />
+          <label for="louie">Peón</label>
+        </div>
+      </fieldset>
+      <label for="cv">Sube tu Currícula: </label>
+      <input type="file" name="cv" id="cv" accept=".pdf, .jpg"><br/>
+      <input
+            type="image"
+            id="image"
+            alt="Login"
+            src="./img/login-button.png" />
+      <input type="submit"></input>    
+    </form>
+
+    <a href="index.html">Volver</a>
+  </body>
+    </html>
